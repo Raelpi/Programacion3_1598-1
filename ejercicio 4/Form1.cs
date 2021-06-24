@@ -36,22 +36,12 @@ namespace ejercicio_4
             }
 
         }
-        public void button2_Click(object sender, EventArgs e)
+
+        private void btn_limpiar_Click(object sender, EventArgs e)
         {
-            int[] valoresDesc = { comboBox1.SelectedIndex };
-
-            valoresDesc = valoresDesc.OrderByDescending(c => c).ToArray();
-
-            foreach (var item in valoresDesc)
-            {
-                comboBox2.Items.Add(item);
-            }
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            comboBox1.Sorted = true;
+            txt_edad.Clear();
+            txt_nombre.Clear();
+            comboBox1.Items.Clear();
         }
     }
 }

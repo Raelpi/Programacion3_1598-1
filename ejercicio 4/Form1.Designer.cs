@@ -35,6 +35,8 @@ namespace ejercicio_4
             this.txt_edad = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnEjecucion = new System.Windows.Forms.Button();
+            this.btn_Ordenar = new System.Windows.Forms.Button();
+            this.btn_limpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -87,11 +89,32 @@ namespace ejercicio_4
             this.btnEjecucion.UseVisualStyleBackColor = true;
             this.btnEjecucion.Click += new System.EventHandler(this.btnEjecucion_Click);
             // 
+            // btn_Ordenar
+            // 
+            this.btn_Ordenar.Location = new System.Drawing.Point(484, 130);
+            this.btn_Ordenar.Name = "btn_Ordenar";
+            this.btn_Ordenar.Size = new System.Drawing.Size(106, 48);
+            this.btn_Ordenar.TabIndex = 6;
+            this.btn_Ordenar.Text = "Ordenar";
+            this.btn_Ordenar.UseVisualStyleBackColor = true;
+            // 
+            // btn_limpiar
+            // 
+            this.btn_limpiar.Location = new System.Drawing.Point(484, 209);
+            this.btn_limpiar.Name = "btn_limpiar";
+            this.btn_limpiar.Size = new System.Drawing.Size(106, 48);
+            this.btn_limpiar.TabIndex = 7;
+            this.btn_limpiar.Text = "Limpiar";
+            this.btn_limpiar.UseVisualStyleBackColor = true;
+            this.btn_limpiar.Click += new System.EventHandler(this.btn_limpiar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_limpiar);
+            this.Controls.Add(this.btn_Ordenar);
             this.Controls.Add(this.btnEjecucion);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.txt_edad);
@@ -113,6 +136,8 @@ namespace ejercicio_4
         private System.Windows.Forms.TextBox txt_edad;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button btnEjecucion;
+        private System.Windows.Forms.Button btn_Ordenar;
+        private System.Windows.Forms.Button btn_limpiar;
     }
 }
 
