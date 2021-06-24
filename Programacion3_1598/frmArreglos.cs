@@ -40,7 +40,43 @@ namespace Programacion3_1598
                 listBox1.Items.Add(item);
             }
 
-        }  
+        }
 
-    }
+        private void btn_ordenar_Click(object sender, EventArgs e)
+        {
+            //ordenar el arreglo
+            int[] valores = { 3, 5, 1, 6, 9, 10, 15, 2 };
+
+            //ordenar de menor a mayor
+            //Array.Sort(valores);
+
+            //Ordenar de mayor a menor 
+           // Array.Reverse(valores);
+
+            foreach (var item in valores)
+            {
+                OrdenarArreglo.Items.Add(item);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int[] valores = { 3, 5, 1, 6, 9, 10, 15, 2 };
+
+            int maximo = valores[0];
+            int minimo = valores[0];
+
+            for (int i = 1 ;i < valores.Length; i++)
+                if(valores[i]>maximo)
+                {
+                    maximo = valores[i];
+                }
+                if(valores[i] < minimo)
+            {
+                minimo = valores[i];
+            }
+
+            MessageBox.Show("valor maximo: " + maximo + "valor Minimo:" + minimo);  
+         }
+   }
 }
