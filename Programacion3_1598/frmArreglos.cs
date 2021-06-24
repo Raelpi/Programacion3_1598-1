@@ -51,7 +51,7 @@ namespace Programacion3_1598
             //Array.Sort(valores);
 
             //Ordenar de mayor a menor 
-           // Array.Reverse(valores);
+           Array.(valores);
 
             foreach (var item in valores)
             {
@@ -63,10 +63,17 @@ namespace Programacion3_1598
         {
             int[] valores = { 3, 5, 1, 6, 9, 10, 15, 2 };
 
-            int maximo = valores[0];
+            Array.Sort(valores);
+
+            int maximo = valores[valores.Length - 1];
+            int minimo = valores[0];
+            MessageBox.Show("valor Maximo: " + maximo + "/ valor minimo"+ minimo)
+
+           /* int maximo = valores[0];
             int minimo = valores[0];
 
             for (int i = 1 ;i < valores.Length; i++)
+           {
                 if(valores[i]>maximo)
                 {
                     maximo = valores[i];
@@ -74,7 +81,7 @@ namespace Programacion3_1598
                 if(valores[i] < minimo)
             {
                 minimo = valores[i];
-            }
+            }*/
 
             MessageBox.Show("valor maximo: " + maximo + "valor Minimo:" + minimo);  
          }
