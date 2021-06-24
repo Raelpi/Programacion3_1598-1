@@ -43,5 +43,32 @@ namespace ejercicio_4
             txt_nombre.Clear();
             comboBox1.Items.Clear();
         }
+
+        private void btn_Ordenar_Click(object sender, EventArgs e)
+        {
+            comboBox1.Sorted = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string[] Nombre = { txt_nombre.Text };
+            int[] Edad = { Convert.ToInt32(txt_edad.Text) };
+
+            Nombre = Nombre.OrderByDescending(c => c).ToArray();
+            
+            foreach (var item in Nombre)
+            {
+                comboBox1.Items.Add(item);
+            }
+
+            Edad = Edad.OrderByDescending(c => c).ToArray();
+
+            foreach (var item in Edad)
+            {
+                comboBox1.Items.Add(item);
+            }
+
+
+        }
     }
 }

@@ -37,6 +37,7 @@ namespace ejercicio_4
             this.btnEjecucion = new System.Windows.Forms.Button();
             this.btn_Ordenar = new System.Windows.Forms.Button();
             this.btn_limpiar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -95,12 +96,13 @@ namespace ejercicio_4
             this.btn_Ordenar.Name = "btn_Ordenar";
             this.btn_Ordenar.Size = new System.Drawing.Size(106, 48);
             this.btn_Ordenar.TabIndex = 6;
-            this.btn_Ordenar.Text = "Ordenar";
+            this.btn_Ordenar.Text = "Ordenar Ascendente";
             this.btn_Ordenar.UseVisualStyleBackColor = true;
+            this.btn_Ordenar.Click += new System.EventHandler(this.btn_Ordenar_Click);
             // 
             // btn_limpiar
             // 
-            this.btn_limpiar.Location = new System.Drawing.Point(484, 209);
+            this.btn_limpiar.Location = new System.Drawing.Point(484, 262);
             this.btn_limpiar.Name = "btn_limpiar";
             this.btn_limpiar.Size = new System.Drawing.Size(106, 48);
             this.btn_limpiar.TabIndex = 7;
@@ -108,11 +110,22 @@ namespace ejercicio_4
             this.btn_limpiar.UseVisualStyleBackColor = true;
             this.btn_limpiar.Click += new System.EventHandler(this.btn_limpiar_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(484, 199);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 38);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Ordenar Descendente ";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_limpiar);
             this.Controls.Add(this.btn_Ordenar);
             this.Controls.Add(this.btnEjecucion);
@@ -138,6 +151,7 @@ namespace ejercicio_4
         private System.Windows.Forms.Button btnEjecucion;
         private System.Windows.Forms.Button btn_Ordenar;
         private System.Windows.Forms.Button btn_limpiar;
+        private System.Windows.Forms.Button button1;
     }
 }
 
