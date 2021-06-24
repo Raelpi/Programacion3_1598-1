@@ -35,8 +35,6 @@ namespace ejercicio_4
             this.txt_edad = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnEjecucion = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -89,33 +87,11 @@ namespace ejercicio_4
             this.btnEjecucion.UseVisualStyleBackColor = true;
             this.btnEjecucion.Click += new System.EventHandler(this.btnEjecucion_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(484, 117);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 57);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "ejecucion acendente";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(484, 180);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 50);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Ejecucion descendente ";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnEjecucion);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.txt_edad);
@@ -137,8 +113,6 @@ namespace ejercicio_4
         private System.Windows.Forms.TextBox txt_edad;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button btnEjecucion;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
     }
 }
 
