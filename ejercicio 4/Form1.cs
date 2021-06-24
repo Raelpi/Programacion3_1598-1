@@ -36,20 +36,7 @@ namespace ejercicio_4
             }
 
         }
-
-        public void button1_Click(object sender, EventArgs e)
-        {
-            int[] valoresAc = { comboBox1.SelectedIndex};
-
-            Array.Sort(valoresAc);
-
-            foreach (var item in valoresAc)
-            {
-                comboBox2.Items.Add(item);
-            }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        public void button2_Click(object sender, EventArgs e)
         {
             int[] valoresDesc = { comboBox1.SelectedIndex };
 
@@ -60,6 +47,11 @@ namespace ejercicio_4
                 comboBox2.Items.Add(item);
             }
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            comboBox1.Sorted = true;
         }
     }
 }
