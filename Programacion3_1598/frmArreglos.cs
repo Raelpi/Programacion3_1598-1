@@ -32,6 +32,9 @@ namespace Programacion3_1598
             {
                 listboxArreglo.Items.Add(edades[i]);
             }
+
+
+
             foreach(var item in paises)
             {
                 listBox1.Items.Add(item);
