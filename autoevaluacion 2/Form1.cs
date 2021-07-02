@@ -34,7 +34,21 @@ namespace autoevaluacion_2
             persona.NombreUsuario = txt_Nombre.Text;
             persona.NCuenta = Convert.ToInt32(txt_NCuenta.Text);
 
-            MessageBox.Show(persona.devolverNombreYNCuenta());
+            txt_informacion.Text = persona.devolverNombreYNCuenta().ToString();
+
+            promedio Notas = new promedio();
+
+            Notas.Nota1 = Convert.ToInt32( txt_Nota1.Text);
+            Notas.Nota2 = Convert.ToInt32(txt_Nota2.Text);
+            Notas.Nota3 = Convert.ToInt32(txt_nota3.Text);
+            Notas.Nota4 = Convert.ToInt32(txt_nota4.Text);
+            Notas.calificacion = txt_califacion.Text;
+
+            txtpromedioTotal.Text = Notas.devolverPromedio().ToString();
+
+            int Informacion = Convert.ToInt32(txtpromedioTotal.Text);
+
+
         }
     }
 }

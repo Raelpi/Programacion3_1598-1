@@ -46,8 +46,10 @@ namespace autoevaluacion_2
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtpromedioTotal = new System.Windows.Forms.TextBox();
+            this.txt_califacion = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txt_informacion = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -170,7 +172,7 @@ namespace autoevaluacion_2
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(24, 84);
+            this.label7.Location = new System.Drawing.Point(24, 126);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(88, 13);
             this.label7.TabIndex = 14;
@@ -179,7 +181,7 @@ namespace autoevaluacion_2
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(24, 29);
+            this.label8.Location = new System.Drawing.Point(24, 78);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(74, 13);
             this.label8.TabIndex = 15;
@@ -187,30 +189,48 @@ namespace autoevaluacion_2
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txt_informacion);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.txt_califacion);
+            this.groupBox1.Controls.Add(this.txtpromedioTotal);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Location = new System.Drawing.Point(12, 299);
+            this.groupBox1.Location = new System.Drawing.Point(12, 285);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(704, 139);
+            this.groupBox1.Size = new System.Drawing.Size(704, 160);
             this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Resultados";
             // 
-            // textBox1
+            // txtpromedioTotal
             // 
-            this.textBox1.Location = new System.Drawing.Point(155, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(378, 20);
-            this.textBox1.TabIndex = 16;
+            this.txtpromedioTotal.Location = new System.Drawing.Point(155, 78);
+            this.txtpromedioTotal.Name = "txtpromedioTotal";
+            this.txtpromedioTotal.Size = new System.Drawing.Size(378, 20);
+            this.txtpromedioTotal.TabIndex = 16;
             // 
-            // textBox2
+            // txt_califacion
             // 
-            this.textBox2.Location = new System.Drawing.Point(155, 81);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(378, 20);
-            this.textBox2.TabIndex = 17;
+            this.txt_califacion.Location = new System.Drawing.Point(155, 123);
+            this.txt_califacion.Name = "txt_califacion";
+            this.txt_califacion.Size = new System.Drawing.Size(378, 20);
+            this.txt_califacion.TabIndex = 17;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(24, 35);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(75, 13);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "Nombre y N/C";
+            // 
+            // txt_informacion
+            // 
+            this.txt_informacion.Location = new System.Drawing.Point(155, 35);
+            this.txt_informacion.Name = "txt_informacion";
+            this.txt_informacion.Size = new System.Drawing.Size(378, 20);
+            this.txt_informacion.TabIndex = 19;
             // 
             // Form1
             // 
@@ -260,8 +280,10 @@ namespace autoevaluacion_2
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_califacion;
+        private System.Windows.Forms.TextBox txtpromedioTotal;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txt_informacion;
     }
 }
 

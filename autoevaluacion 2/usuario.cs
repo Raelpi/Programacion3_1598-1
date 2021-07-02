@@ -27,7 +27,7 @@ namespace autoevaluacion_2
 
         public string devolverNombreYNCuenta()
         {
-            return NombreUsuario + " " + NCuenta;
+            return "El Nombre del Alumno es: " +NombreUsuario + "El Numero de cuenta es: " + NCuenta;
         }
 
     }
