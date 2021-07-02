@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E9159271-B1B8-4203-AB6F-FC74EEC5F7C4}</ProjectGuid>
+    <ProjectGuid>{50BA751F-A0B3-4C73-809D-4BC37498CFC0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Ejercicio_5</RootNamespace>
-    <AssemblyName>Ejercicio_5</AssemblyName>
+    <RootNamespace>autoevaluacion_2</RootNamespace>
+    <AssemblyName>autoevaluacion 2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

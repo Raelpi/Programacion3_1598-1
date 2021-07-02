@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Ejercicio_5
+namespace autoevaluacion_2
 {
     public partial class Form1 : Form
     {

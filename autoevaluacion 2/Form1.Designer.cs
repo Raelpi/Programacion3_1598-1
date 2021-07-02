@@ -1,5 +1,5 @@
 ﻿
-namespace Ejercicio_5
+namespace autoevaluacion_2
 {
     partial class Form1
     {
