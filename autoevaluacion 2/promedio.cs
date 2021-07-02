@@ -14,11 +14,11 @@ namespace autoevaluacion_2
     public int Nota4 { get; set; }
 
     public float TotalPromedio { get; set; }
-    public string calificacion { get; set; }
+    public int calificacion { get; set; }
 
         public promedio() { }
 
-        public promedio(int _Nota1, int _Nota2,int _Nota3, int _Nota4,float _TotalPromedio,string _calificacion)
+        public promedio(int _Nota1, int _Nota2,int _Nota3, int _Nota4,float _TotalPromedio,int _calificacion)
         {
             Nota1 = _Nota1;
             Nota2 = _Nota2;
@@ -34,10 +34,17 @@ namespace autoevaluacion_2
             return TotalPromedio;
         }
 
-        public string devolverInfo()
+        public int devolverInfo()
         {
-
-            return
+            calificacion = Convert.ToInt32(TotalPromedio);
+            if(calificacion >=70)
+            {
+                Console.WriteLine("El alumno aprobo la clase");
+            }else
+            {
+                Console.WriteLine("El alumno reprobo la clase");
+            }
+            return calificacion;
         }
 
 

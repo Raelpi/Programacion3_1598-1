@@ -42,11 +42,11 @@ namespace autoevaluacion_2
             Notas.Nota2 = Convert.ToInt32(txt_Nota2.Text);
             Notas.Nota3 = Convert.ToInt32(txt_nota3.Text);
             Notas.Nota4 = Convert.ToInt32(txt_nota4.Text);
-            Notas.calificacion = txt_califacion.Text;
+          
 
             txtpromedioTotal.Text = Notas.devolverPromedio().ToString();
 
-            int Informacion = Convert.ToInt32(txtpromedioTotal.Text);
+            MessageBox.Show(Notas.devolverInfo().ToString());
 
 
         }
