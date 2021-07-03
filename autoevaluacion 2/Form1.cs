@@ -46,7 +46,7 @@ namespace autoevaluacion_2
 
             txtpromedioTotal.Text = Notas.devolverPromedio().ToString();
 
-            MessageBox.Show(Notas.devolverInfo().ToString());
+            MessageBox.Show("aprobo con mas o igual de 70 y reprobo si es menor a 70, la nota del alumno es: "+Notas.devolverInfo().ToString());
 
 
         }

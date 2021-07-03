@@ -36,7 +36,7 @@ namespace autoevaluacion_2
 
         public int devolverInfo()
         {
-            calificacion = Convert.ToInt32(TotalPromedio);
+            calificacion =Convert.ToInt32(TotalPromedio);
             if(calificacion >=70)
             {
                 Console.WriteLine("El alumno aprobo la clase");
