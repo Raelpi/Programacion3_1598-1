@@ -51,7 +51,7 @@ namespace Examen2Parcial
             }
             else
             {
-                
+                labelError.Visible = true;
             }
         }
 
