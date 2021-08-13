@@ -16,7 +16,7 @@ namespace Facturacion1201
             InitializeComponent();
         }
         Usuarios frmUsuarios;
-        ProductosForm frmProductos;
+        Productos frmProductos;
         private void UsuariostoolStripButton1_Click(object sender, EventArgs e)
         {
             if(frmUsuarios == null)
@@ -43,7 +43,7 @@ namespace Facturacion1201
         {
             if (frmProductos == null)
             {
-                frmProductos = new ProductosForm();
+                frmProductos = new Productos();
                 frmProductos.MdiParent = this;
                 frmProductos.FormClosed += FrmProductos_FormClosed;
               
