@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Facturacion1201
 {
-    public partial class Form1 : Form
+    public partial class Usuarios : Syncfusion.Windows.Forms.Office2010Form
     {
-        public Form1()
+        public Usuarios()
         {
             InitializeComponent();
         }

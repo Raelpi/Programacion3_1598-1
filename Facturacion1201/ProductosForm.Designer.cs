@@ -1,6 +1,7 @@
-﻿namespace Facturacion1201
+﻿
+namespace Facturacion1201
 {
-    partial class Form1
+    partial class ProductosForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +29,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // ProductosForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(574, 386);
+            this.Name = "ProductosForm";
+            this.Text = "ProductosForm";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
     }
 }
-
