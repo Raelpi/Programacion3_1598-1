@@ -16,7 +16,7 @@ namespace Facturacion1201
             InitializeComponent();
         }
         Usuarios frmUsuarios;
-        Productos frmProductos;
+        ProductosForm frmProductos;
         private void UsuariostoolStripButton1_Click(object sender, EventArgs e)
         {
             if(frmUsuarios == null)
@@ -43,7 +43,7 @@ namespace Facturacion1201
         {
             if (frmProductos == null)
             {
-                frmProductos = new Productos();
+                frmProductos = new ProductosForm();
                 frmProductos.MdiParent = this;
                 frmProductos.FormClosed += FrmProductos_FormClosed;
               
@@ -57,6 +57,16 @@ namespace Facturacion1201
         private void FrmProductos_FormClosed(object sender, FormClosedEventArgs e)
         {
             frmProductos = null;
+        }
+
+        private void PrincipalForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if(MessageBox.Show("Desesa salir del sistema?","confirmacion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                e.Cancel = true;
+                
+            }
+            Application.Exit();
         }
     }
 }

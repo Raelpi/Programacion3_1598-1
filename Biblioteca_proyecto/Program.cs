@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace Facturacion1201
+namespace Biblioteca_proyecto
 {
     static class Program
     {
@@ -15,7 +15,7 @@ namespace Facturacion1201
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Usuarios());
+            Application.Run(new LoginForm());
         }
     }
 }
